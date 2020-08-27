@@ -6,6 +6,11 @@
     function(2, 8) The function prints 2 4 8 16 32 64 128 256. Prints 8 exponential values of 2. 
 */
 function function1(x, y) {
+    if ((typeof(x) === 'number') && (typeof(y) === 'number')) {
+        console.log(true); // true
+    } else {
+        console.log(false);
+    }
     let term = 1;
     let output = "";
     for (let i = 1; i <= y; i++) {
