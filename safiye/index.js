@@ -1,13 +1,16 @@
 //#### 1. Print Exponential Values
 function getExponent(num, howmany) {
-  //girdileri sadece num ile sinirla !!!!
-  output = "";
-  for (let i = 1; i <= howmany; i++) {
-    output = output + Math.pow(num, i) + " ";
+  if (typeof num == "number" && typeof howmany == "number") {
+    output = "";
+    for (let i = 1; i <= howmany; i++) {
+      output = output + Math.pow(num, i) + " ";
+    }
+    console.log(output);
+  } else {
+    console.log("Minimum one of your answers is not a number");
   }
-  console.log(output);
 }
-getExponent(2, 8);
+getExponent("a string", 8);
 
 //#### 2. Fruits
 let favoriteFruit = "Banana";
