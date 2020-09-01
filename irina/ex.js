@@ -12,10 +12,16 @@ exponetial1(3,5) //number
 
 
 function exponetial2(x,y) {
+  if ((typeof(x) === 'number') && (typeof(y) === 'number')) {
+    console.log(true); // true
+} else {
+    console.log(false);
+}
   let result = 1;
         for(let i = 0 ; i < y; i++) {
             result *= x
             console.log(result);
+           
         }
 } 
 exponetial2(3,5) // 3, 9, 27, 81, 243
